@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- L'en-tête inclut des éléments comme le lien vers le fichier CSS, le nom de la page, etc. -->
+	<title>Louis Schuhler - CarPixShare</title>
+	<!-- Lien vers le fichier CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<!-- FIREBASE -->
+	<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+	<script>
+		// Initialiser Firebase
+		var config = {
+			apiKey: "AIzaSyAFqMN4hPiMs5dBJZdwMucioDVAsBjyQ8c",
+			authDomain: "car-image-sharing.firebaseapp.com",
+			databaseURL: "https://car-image-sharing.firebaseio.com",
+			projectId: "car-image-sharing",
+			storageBucket: "car-image-sharing.appspot.com",
+			messagingSenderId: "889223072869"
+		};
+		firebase.initializeApp(config);
+	</script>
+
+	<!-- Importer JQuery -->
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<!-- Lien vers le fichier JS -->
+	<script src="main.js"></script>
+</head>
+
+
+<body>
+	<div class="bigdiv">
+		<!-- EN-TÊTE -->
+		<div class="header" id="topHeader">
+			<!-- BOUTON SUPÉRIEUR -->
+			<div id="topButton">
+				<button onclick="topFunction()" id="logoButton" title="Remonter en haut de la page">Site web de Kevin</button>
+			</div>
+
+			<!-- Boîte de recherche -->
+			<div class="searchBox" id="searchBox">
+				<input type="text" name="search" id="searchbar" placeholder="Recherche">
+			</div>
+		</div>
+
+
+
+		<!-- DIV DE LA CHRONOLOGIE -->
+		<div class="timeline" id="timeline">
+
+			
+		</div>
+	</div>
+
+
+
+	<!-- TÉLÉCHARGEMENT D'IMAGE -->
+	<div class="upload">
+		<h2>Téléchargement</h2>
+		<input type="text" id="imageCaption" placeholder="Écrire une légende">
+		<label class="upload-group"> Télécharger un fichier <input type="file" class="upload-group" id="file"> </label>
+		<button type="button" class="btn btn-primary" id="uploadButton" onclick="uploadFile()">SOUMETTRE</button>
+	</div>
+
+
+	<button type="button" class="myBTN" id="signMeOut" onclick="signOut()">DÉCONNEXION</button>
+
+</body>
+</html>
