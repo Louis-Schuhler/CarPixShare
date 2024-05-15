@@ -1,0 +1,21 @@
+body {
+    background: dodgerblue;
+}
+
+.main-div {
+    margin: 0 auto;
+    width: 20%;
+    margin-top: 150px;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-div input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
