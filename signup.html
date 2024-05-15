@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Page d'inscription</title>
+	<!-- Lien vers le CSS -->
+	<link rel="stylesheet" type="text/css" href="css/inscription.css">
+
+	<!-- FIREBASE -->
+	<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+	<script>
+		// Initialiser Firebase
+		var config = {
+			apiKey: "AIzaSyAFqMN4hPiMs5dBJZdwMucioDVAsBjyQ8c",
+			authDomain: "car-image-sharing.firebaseapp.com",
+			databaseURL: "https://car-image-sharing.firebaseio.com",
+			projectId: "car-image-sharing",
+			storageBucket: "car-image-sharing.appspot.com",
+			messagingSenderId: "889223072869"
+		};
+		firebase.initializeApp(config);
+	</script>
+
+	<!-- Importer JQuery -->
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Lien vers le fichier JS -->
+	<script src="auth.js"></script>
+
+</head>
+
+<!-- CORPS -->
+
+<body>
+	<div class="signup-div">
+		<h3>S'inscrire ici</h3>
+		<button id="login-google">Se connecter avec Google</button>
+		<input type="name" id="name" placeholder="Nom d'affichage..." />
+		<input type="email" id="email" placeholder="E-mail..." />
+		<input type="password" id="password" placeholder="Mot de passe..." />
+
+		<button onclick="handleSignUp()" id="main-div-button">S'inscrire</button>
+		<button onclick="sendEmailVerification()" disabled id="quickstart-verify-email" name="verify-email">Envoyer la vérification
+			par e-mail</button>
+	</div>
+
+	<div class="sign-in">
+		<h4>Vous avez un compte ? <a href="login.html">Se connecter</a></h4>
+	</div>
+
+
+</body>
+
+</html>
