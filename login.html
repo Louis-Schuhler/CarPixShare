@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Page de connexion</title>
+	<!-- Lien vers le CSS -->
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+
+	<!-- FIREBASE -->
+	<script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+	<script>
+		// Initialiser Firebase
+		var config = {
+			apiKey: "AIzaSyAFqMN4hPiMs5dBJZdwMucioDVAsBjyQ8c",
+			authDomain: "car-image-sharing.firebaseapp.com",
+			databaseURL: "https://car-image-sharing.firebaseio.com",
+			projectId: "car-image-sharing",
+			storageBucket: "car-image-sharing.appspot.com",
+			messagingSenderId: "889223072869"
+		};
+		firebase.initializeApp(config);
+	</script>
+
+	<!-- Importer JQuery -->
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+	<!-- Lien vers le fichier JS -->
+	<script src="auth.js"></script>
+</head>
+
+
+<body>
+
+	<div class="main-div">
+		<h3>Connectez-vous ici</h3>
+		<input type="email" id="email" placeholder="E-mail..." />
+		<input type="password" id="password" placeholder="Mot de passe..." />
+
+		<button onclick="handleLogIn()" id="main-div-button">Se connecter</button>
+		<div class="register">
+			<h4>Vous n'avez pas de compte ? <a href="signup.html">Inscrivez-vous</a></h4>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
