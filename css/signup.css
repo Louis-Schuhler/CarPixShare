@@ -1,0 +1,61 @@
+body {
+    background-color: dodgerblue;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    color: red;
+}
+
+.signup-div {
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 20px;
+    background: dodgerblue;
+    text-align: center;
+}
+
+.signup-div input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.sign-in {
+    text-align: center;
+}
+
+#email {
+    padding: 5px;
+    height: 15px;
+    margin-bottom: 10px;
+}
+
+#password {
+    padding: 5px;
+    height: 15px;
+    margin-bottom: 10px;
+}
+
+#name {
+    padding: 5px;
+    height: 15px;
+    margin-bottom: 10px;
+}
+
+#main-div-button {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#login-google {
+    border-radius: 5px;
+    padding: 5px;
+    width: 50%;
+    margin-bottom: 18px;
+}
